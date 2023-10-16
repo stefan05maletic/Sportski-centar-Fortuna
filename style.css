@@ -1,0 +1,784 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  width: 100%;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+}
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #0a042a;
+}
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #0a042a;
+}
+h4 {
+  font-size: 22px;
+  color: #0a042a;
+}
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+  color: #0a042a;
+}
+p {
+  font-size: 16px;
+  margin: 15px 0 20px 0;
+  color: #088178;
+}
+.add-margin {
+  margin: 40px 0;
+}
+.add-padding {
+  padding: 40px 80px;
+}
+button.normal {
+  font-size: 14px;
+  background-color: #c8ed51;
+  padding: 15px 30px;
+  color: #0a042a;
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: 0;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+}
+header .logo img {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #088178;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+header .navbar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .navbar a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 5px;
+  color: #fff;
+  padding: 10px 12px;
+  transition: 0.8s ease;
+}
+header .navbar a:hover {
+  background-color: #fff;
+  color: #0b052f;
+  border: none;
+  border-radius: 5px;
+}
+header .navbar a.active {
+  background-color: #fff;
+  color: #0b052f;
+  border: none;
+  border-radius: 5px;
+}
+header .btn {
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+#hero {
+  background-image: url("img/background.jpg");
+  height: 90vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  padding: 0 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+#hero h4 {
+  padding-bottom: 15px;
+  color: #e9f0ee;
+}
+#hero h1 {
+  color: #e9f0ee;
+}
+#hero h2 {
+  color: #c8ed51;
+}
+#hero button {
+  border: none;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  color: #0a042a;
+  font-size: 16px;
+  padding: 10px;
+  width: 150px;
+  font-weight: 700;
+  height: 60px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+#hero button:hover {
+  background-color: #c8ed51;
+}
+#hero p {
+  color: #e9f0ee;
+  font-weight: 400;
+}
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#feature .feature-box img {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+}
+#feature .feature-box {
+  width: 180px;
+  height: 220px;
+  text-align: center;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.09);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  margin: 15px 0;
+  padding: 15px 15px;
+}
+#feature .feature-box h6 {
+  padding: 9px 5px 6px 5px;
+  line-height: 1;
+  border-radius: 8px;
+  background-color: #0b052f;
+  color: white;
+}
+#feature .feature-box:hover {
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.3);
+}
+
+#feature .feature-box:nth-child(even) h6 {
+  background-color: #088178;
+}
+.partOf-page {
+  text-align: center;
+}
+.partOf-page .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+.partOf-page .box {
+  width: 23%;
+  min-width: 250px;
+  height: 400px;
+  min-height: 350px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
+}
+.partOf-page .box:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+}
+.partOf-page .box img {
+  width: 100%;
+  height: 60%;
+  border-radius: 20px;
+  padding: 5px;
+}
+.partOf-page .box .description {
+  text-align: start;
+  padding: 10px 0;
+}
+.partOf-page .box .description span {
+  color: #088178;
+  font-size: 12px;
+}
+.partOf-page .box .description h5 {
+  padding-top: 7px;
+  color: #0a042a;
+  font-size: 14px;
+}
+.partOf-page .box .description i {
+  font-size: 15px;
+  color: #e4d42a;
+}
+.partOf-page .box .description h4 {
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #088178;
+}
+.partOf-page .box .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #cce7d0;
+  font-weight: 500;
+  color: #0a042a;
+  border: 1px solid #0a042a;
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  transition: 0.5s ease;
+}
+.partOf-page .box .cart:hover {
+  color: #fff;
+  background-color: #0a042a;
+  border: 1px solid white;
+}
+#sponsors {
+  background-image: url("img/sponsors.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 40vh;
+  border: 1px solid #0a042a;
+}
+#sponsors h4 {
+  font-size: 20px;
+  color: #fff;
+}
+#sponsors h2 {
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 0;
+}
+#sponsors span {
+  color: #c8ed51;
+}
+#sponsors button:hover {
+  background-color: #7c9d11;
+  color: #cce7d0;
+}
+#banners {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#banners .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("img/women.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 48%;
+  min-width: 580px;
+  height: 40vh;
+  padding: 30px;
+}
+#banners .banner-box h4 {
+  color: #c8ed51;
+  font-size: 20px;
+  font-weight: 300;
+}
+#banners .banner-box h2 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 800;
+}
+#banners .banner-box p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 15px;
+  margin: 0;
+}
+.banner-button {
+  font-size: 13px;
+  background-color: transparent;
+  padding: 11px 25px;
+  color: #fff;
+  font-weight: 700;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: 0;
+  transition: 0.2s;
+}
+#banners .banner-box:hover button {
+  background-color: #c8ed51;
+  color: #0a042a;
+  border: 1px solid #0a042a;
+}
+#banners .banner-box:nth-child(2) {
+  background-image: url("img/referee.jpg");
+}
+#important-news {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 80px;
+}
+#important-news .box-news {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("img/tournament.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 32%;
+  min-width: 370px;
+  height: 25vh;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+#important-news .box-news h3 {
+  color: #f1fd0a;
+  font-weight: 900;
+  font-size: 23px;
+}
+#important-news .box-news h4 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
+  margin-top: 10px;
+}
+#important-news .box-news:nth-child(2) {
+  background-image: url("img/stud-indeks.jpg");
+}
+#important-news .box-news:nth-child(3) {
+  background-image: url("img/drinks.jpg");
+}
+#fortuna-membership {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url("img/news.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#fortuna-membership .registration {
+  display: flex;
+  width: 50%;
+}
+#fortuna-membership h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+#fortuna-membership p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #c8ed51;
+}
+
+#fortuna-membership p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+#fortuna-membership p span {
+  color: #c8ed51;
+}
+#fortuna-membership input {
+  height: 30px;
+  width: 240px;
+  padding: 0 12px;
+  font-size: 14px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  color: #0b052f;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#fortuna-membership button {
+  color: #0b052f;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 4px 22px;
+  background-color: #c8ed51;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: 0.5s ease;
+}
+#fortuna-membership button:hover {
+  color: #fff;
+  background-color: #0b052f;
+  border: 1px solid #fff;
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .logo {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+footer .information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+footer .logo {
+  margin-bottom: 30px;
+}
+footer h4 {
+  font-size: 15px;
+  padding-bottom: 20px;
+  color: #093f37;
+}
+footer p {
+  color: #0a042a;
+  font-size: 14px;
+  margin: 0 0 8px 0;
+}
+footer a {
+  color: #0a042a;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+footer .follow {
+  margin-top: 20px;
+}
+footer .follow .social a {
+  color: #093f37;
+  padding-right: 9px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+footer a:hover {
+  color: #088178;
+}
+footer .install-app .aplications img {
+  border: 1px solid #0a042a;
+  border-radius: 4px;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
+footer .copyright {
+  width: 100%;
+  text-align: center;
+}
+#tournament-hero {
+  background-image: url("img/tournamentbackground.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+}
+#tournament-hero h2 {
+  color: #0b052f;
+}
+#tournament-hero p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+#tournament-details {
+  display: flex;
+}
+#tournament-details .tournament-details-image {
+  width: 50%;
+  padding-top: 70px;
+}
+#tournament-details .tournament-details-image #top-image {
+  width: 100%;
+  height: 50vh;
+  border: 1px solid #0a042a;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+#tournament-details .tournament-details-image #top-image:hover {
+  box-shadow: 5px 15px 40px rgba(0, 0, 0, 0.2);
+}
+.tournament-details-small-images {
+  display: flex;
+  justify-content: space-between;
+}
+.tournament-details-small-images .small-image-details {
+  margin: 10px 12px;
+}
+.tournament-details-small-images .small-image-details img {
+  width: 100%;
+  height: 20vh;
+  border: 1px solid #0a042a;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.tournament-details-small-images .small-image-details img:hover {
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+}
+#tournament-details .tournament-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 100px 60px;
+}
+.tournament-info h5 {
+  padding-bottom: 50px;
+}
+.tournament-info h2 {
+  color: #7c9d11;
+  padding-bottom: 20px;
+  font-size: 46px;
+}
+.tournament-info select {
+  display: block;
+  width: 20%;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0a042a;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  border: 1px solid #0b052f;
+  border-radius: 3px;
+}
+.tournament-info p {
+  color: #0a042a;
+  font-weight: 500;
+  margin: 15px 0 6px 0;
+  line-height: 25px;
+}
+.tournament-info input {
+  width: 30%;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0a042a;
+  cursor: pointer;
+  border: 1px solid #0b052f;
+  text-align: center;
+}
+.tournament-info button {
+  width: 30%;
+  background-color: #7c9d11;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 40px;
+  transition: 0.4s;
+}
+.tournament-info button:hover {
+  background-color: #0b052f;
+}
+@media (max-width: 1100px) {
+  header {
+    padding: 10px 25px;
+  }
+}
+@media (max-width: 799px) {
+  .add-padding {
+    padding: 40px 40px;
+  }
+  header .btn {
+    display: block;
+  }
+  header .navbar {
+    position: fixed;
+    flex-direction: column;
+    min-width: 350px;
+    height: 50vh;
+    background-color: #0b052f;
+    top: 0;
+    right: -100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 60px 0 0 15px;
+    transition: 0.8s ease;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .active2 {
+    right: 0 !important;
+  }
+  header .navbar .close-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+  }
+  header .navbar a {
+    display: block;
+    font-size: 16px;
+    margin: 5px 10px;
+  }
+  header .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  #hero {
+    height: 70vh;
+    padding: 0 80px;
+  }
+  #feature {
+    justify-content: center;
+  }
+  #feature .feature-box {
+    margin: 15px 15px;
+  }
+  .partOf-page .container {
+    justify-content: center;
+  }
+  .partOf-page .box {
+    margin: 15px;
+  }
+  #sponsors {
+    height: 30vh;
+  }
+  #banners .banner-box {
+    min-width: 100%;
+    height: 30vh;
+    margin-top: 20px;
+  }
+  #important-news {
+    padding: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  #important-news .box-news {
+    min-width: 180px;
+    width: 30%;
+  }
+  #important-news .box-news h3 {
+    font-size: 18px;
+  }
+  #important-news .box-news h4 {
+    font-size: 14px;
+  }
+  #fortuna-membership .registration {
+    width: 70%;
+  }
+}
+@media (max-width: 477px) {
+  header {
+    padding: 10px 30px;
+  }
+  header .logo img {
+    width: 35px;
+    height: 35px;
+  }
+  #hero {
+    padding: 0 20px;
+  }
+  #hero h2 {
+    font-size: 32px;
+  }
+  #hero h2 {
+    font-size: 38px;
+  }
+  #hero button {
+    font-size: 13px;
+    padding: 7px;
+    width: 120px;
+    font-weight: 700;
+    height: 45px;
+  }
+  .add-padding {
+    padding: 25px;
+  }
+  #feature {
+    justify-content: space-between;
+  }
+  #feature .feature-box {
+    width: 150px;
+    height: 190px;
+    margin: 0 0 15px 0;
+  }
+  #feature .feature-box img {
+    height: 120px;
+  }
+  .partOf-page .box {
+    width: 80%;
+    height: 350px;
+  }
+  .partOf-page .box img {
+    height: 65%;
+  }
+  h2 {
+    font-size: 33px;
+  }
+  #sponsors {
+    height: 40vh;
+    padding: 10px;
+  }
+  #sponsors h2 {
+    font-size: 25px;
+    padding: 5px 0;
+  }
+  #sponsors h4 {
+    font-size: 16px;
+  }
+  #banners .banner-box h2 {
+    font-size: 30px;
+  }
+  #important-news {
+    margin-left: 27px;
+    margin-right: 27px;
+  }
+  #important-news .box-news {
+    height: 200px;
+    width: 100%;
+  }
+  #fortuna-membership .registration input {
+    width: 60%;
+    height: 23px;
+  }
+  #fortuna-membership .registration button {
+    width: 30%;
+    height: 23px;
+    font-size: 11px;
+    padding: 1px 3px;
+  }
+}
